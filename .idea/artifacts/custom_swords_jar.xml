@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="custom_swords:jar">
+    <output-path>$PROJECT_DIR$/../../../../Bureau/serveur local/MonPluginV2/plugins</output-path>
+    <root id="archive" name="custom_swords.jar">
+      <element id="module-output" name="custom_swords" />
+    </root>
+  </artifact>
+</component>

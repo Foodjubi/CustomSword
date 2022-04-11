@@ -1,0 +1,7 @@
+name: CustomSword
+version: 1.0.0
+author: Foodjubi
+main: fr.foodjubi.Main
+commands:
+  test:
+    description: commande de test

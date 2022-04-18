@@ -17,7 +17,14 @@ import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import org.bukkit.util.Vector;
 
+import java.util.ArrayList;
+
+import static org.bukkit.Bukkit.getServer;
+
+
 public class PlayerInteractEventListener implements Listener {
+
+    private ArrayList<String> cooldown = new ArrayList<String>();
 
     private Main main;
 
@@ -51,12 +58,14 @@ public class PlayerInteractEventListener implements Listener {
 
                 if(newloc.getY() < highesty){
                     int y = newloc.getWorld().getHighestBlockYAt(newloc);
-                    newloc.setY(y);
+                    newloc = player.getLocation();
                 }
 
                 player.teleport(newloc);
                 player.playSound(newloc, Sound.ENTITY_ENDERMAN_TELEPORT, 2, 2);
             }
+
         }
     }
+
 }
